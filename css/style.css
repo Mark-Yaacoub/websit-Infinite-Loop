@@ -1,0 +1,345 @@
+* {
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header {
+    background-image: url(https://images.pexels.com/photos/2100182/pexels-photo-2100182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-color: lightcoral;
+    background-position: top;
+    height: 100vh;
+
+}
+
+
+header .logo p {
+    color: #335577;
+    font-size: 29px;
+    padding-top: 20px;
+    font-weight: bolder;
+    /*  position: fixed; */
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    position: relative;
+}
+
+header .container ul {
+    font-size: 24px;
+    font-weight: 400;
+    /* position: absolute;  */
+    /* padding-top: 25px; */
+}
+
+header .container ul li {
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+header .container ul li a {
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-decoration: none;
+    padding-right: 65px;
+}
+
+
+.navbar a::before,
+.navbar a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.navbar a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    transform: translate(-100%, 50%);
+}
+
+.navbar a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    transform: translate(100%, -50%)
+}
+
+.navbar a:hover:before,
+.navbar a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.navbar a:hover {
+    color: #335577;
+}
+
+header .add {
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+
+header .add h1 {
+    color: #335577;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: cubic-bezier(0, 1.08, 0.57, 1) 5s;
+}
+
+header .add h1:hover {
+
+    color: rgb(63, 172, 0);
+
+}
+header .add p {
+    color: #335577;
+}
+
+/* start What We Do */
+section {
+    padding-top: 20px;
+}
+
+section .titel h1 {
+    color: #335577;
+}
+
+section .titel p {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+section .row {
+    padding-top: 15px;
+    justify-content: space-around;
+}
+
+section .box {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+section .box h2 {
+    color: #335577;
+    font-size: 40px;
+}
+
+section .box p {
+
+    font-size: 20px;
+}
+
+section button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #335577;
+    background: transparent;
+    color: #335577;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #335577;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+    color: white;
+}
+
+button:hover {
+    border: none;
+    color: white;
+}
+
+/* start  Testimonials */
+.Testimonials {
+    background-image: url(https://images.pexels.com/photos/2299569/pexels-photo-2299569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-color: lightcoral;
+    background-position: center;
+
+    height: 100%
+}
+
+.Testimonials .container .titel h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.Testimonials .container .titel p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 80px;
+
+}
+
+.Testimonials .container .row {
+    text-align: center;
+    color: white;
+}
+
+.Testimonials .container .row .boxx {}
+
+.Testimonials .container .row .boxx img {
+    width: 120px;
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+.Testimonials .container .row .boxx img:hover {
+    width: 150px;
+}
+
+.Testimonials .container .row .boxx h3 {
+    font-size: 30px;
+    margin: 15px;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+/* start Gallery */
+.Gallery .container .titel {
+    text-align: center;
+}
+
+.Gallery .container .titel p {
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 80px;
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    overflow: hidden;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+}
+
+.cards .card:hover .caption {
+    bottom: 0;
+}
+
+.cards .card:hover img {
+    transform: rotate(3deg) scale(1.1);
+}
+
+.cards .card img {
+
+    max-width: 100%;
+    transition: 0.3s;
+}
+
+.cards .card .caption {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    transition: 0.3s;
+    bottom: -100%;
+}
+
+.cards .card .caption h4 {
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #335577;
+    font-weight: bolder;
+}
+
+/* start conat us */
+.Contact {
+    background-image: url(https://images.pexels.com/photos/2342018/pexels-photo-2342018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-color: lightcoral;
+    background-position: center;
+    height: 100%
+}
+
+.Contact .titel {
+    color: white;
+    text-align: center;
+}
+
+.Contact .titel h1 {
+    color: white;
+}
+
+form {
+    /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 20px; */
+    flex-basis: 70%;
+}
+
+form .main-input {
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+form .main-input:focus {
+    outline: none;
+}
+
+form textarea.main-input {
+    height: 200px;
+}
+
+.c form input[type="submit"] {
+
+    color: white;
+    padding: 20px;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
