@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mark Yaacoub</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- font aswame -->
 
     <!-- font google -->
@@ -23,16 +23,17 @@
 </head>
 
 <body>
-    <header>
+    <!-- nav bar -->
+    <header class="fixed-top bg-white">
         <div class="container">
             <div class="logo">
                 <P>Infinite Loop</P>
             </div>
-            <div class="navbar navbar-expand-lg navbar-expand-lg">
-                <button class="navbar-toggler btn btn-info" type="button " data-toggle="collapse"
+            <div class="navbar navbar-expand-lg navbar-expand-lg light bg-">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon btn btn-info"></span>
+                    <span class="navbar-toggler-icon "></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,7 +42,7 @@
                             <a class="nav-link" href="#Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#What We Do">What We Do</a>
+                            <a class="nav-link" href="#What">What We Do</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Testimonials">Testimonials</a>
@@ -52,19 +53,26 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#Contact">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Footer">Footer</a>
+                        </li>
 
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="add">
+    </header>
+    <!-- home -->
+    <div class="header">
+        <div class="add" id="Home">
             <h1>Infinite Loop</h1>
             <p>Make website by Mark Yaacoub</p>
 
         </div>
-    </header>
+    </div>
+
     <!-- start What We Do -->
-    <section class="What">
+    <section class="What" id="What">
         <div class="container">
             <div class="titel">
                 <h1>What We Do</h1>
@@ -114,7 +122,7 @@
     </section>
 
     <!-- start Testimonials -->
-    <section class="Testimonials">
+    <section class="Testimonials" id="Testimonials">
         <div class="container">
             <div class="titel">
                 <h1>Testimonials</h1>
@@ -123,7 +131,7 @@
             </div>
             <div class="row">
                 <div class="boxx col-lg-3 col-md-6 ">
-                    <img class="rounded-circle" src="img/testimonial-img-01.jpg">
+                    <img class="rounded-circle" src="assets/img/testimonial-img-01.jpg">
                     <h3>Sara Khled</h3>
                     <p>
                         This background image includes a semi-transparent overlay layer. This section also has a
@@ -131,7 +139,7 @@
                     </p>
                 </div>
                 <div class="boxx col-lg-3 col-md-6 ">
-                    <img class="rounded-circle" src="img/testimonial-img-02.jpg">
+                    <img class="rounded-circle" src="assets/img/testimonial-img-02.jpg">
                     <h3>Khled Ahmed</h3>
                     <p>
                         This background image includes a semi-transparent overlay layer. This section also has a
@@ -139,7 +147,7 @@
                     </p>
                 </div>
                 <div class="boxx col-lg-3 col-md-6 ">
-                    <img class="rounded-circle" src="img/testimonial-img-03.jpg">
+                    <img class="rounded-circle" src="assets/img/testimonial-img-03.jpg">
                     <h3>Mary goda</h3>
                     <p>
                         This background image includes a semi-transparent overlay layer. This section also has a
@@ -147,7 +155,7 @@
                     </p>
                 </div>
                 <div class="boxx col-lg-3 col-md-6 ">
-                    <img class="rounded-circle" src="img/testimonial-img-04.jpg">
+                    <img class="rounded-circle" src="assets/img/testimonial-img-04.jpg">
                     <h3>Merna hamdy</h3>
                     <p>
                         This background image includes a semi-transparent overlay layer. This section also has a
@@ -159,7 +167,7 @@
 
     </section>
     <!-- start Gallery -->
-    <section class="Gallery">
+    <section class="Gallery" id="Gallery">
         <div class="container">
             <div class="titel">
                 <h1>Gallery</h1>
@@ -172,7 +180,7 @@
             </div>
             <div class="cards">
                 <div class="card col-lg-4">
-                    <img src="img/gallery-img-01.jpg" alt="">
+                    <img src="assets/img/gallery-img-01.jpg" alt="">
                     <div class="caption">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus at ducimus
                             exercitationem facere reiciendis sit minima modi vel perferendis, labore nobis asperiores
@@ -181,7 +189,7 @@
                     </div>
                 </div>
                 <div class="card col-lg-4">
-                    <img src="img/gallery-img-02.jpg" alt="">
+                    <img src="assets/img/gallery-img-02.jpg" alt="">
                     <div class="caption">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus at ducimus
                             exercitationem facere reiciendis sit minima modi vel perferendis, labore nobis asperiores
@@ -190,7 +198,7 @@
                     </div>
                 </div>
                 <div class="card col-lg-4">
-                    <img src="img/gallery-img-03.jpg" alt="">
+                    <img src="assets/img/gallery-img-03.jpg" alt="">
                     <div class="caption">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus at ducimus
                             exercitationem facere reiciendis sit minima modi vel perferendis, labore nobis asperiores
@@ -199,7 +207,7 @@
                     </div>
                 </div>
                 <div class="card col-lg-4 ">
-                    <img src="img/gallery-img-04.jpg" alt="">
+                    <img src="assets/img/gallery-img-04.jpg" alt="">
                     <div class="caption">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus at ducimus
                             exercitationem facere reiciendis sit minima modi vel perferendis, labore nobis asperiores
@@ -208,7 +216,7 @@
                     </div>
                 </div>
                 <div class="card col-lg-4">
-                    <img src="img/gallery-img-05.jpg" alt="">
+                    <img src="assets/img/gallery-img-05.jpg" alt="">
                     <div class="caption">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus at ducimus
                             exercitationem facere reiciendis sit minima modi vel perferendis, labore nobis asperiores
@@ -217,7 +225,7 @@
                     </div>
                 </div>
                 <div class="card col-lg-4">
-                    <img src="img/gallery-img-06.jpg" alt="">
+                    <img src="assets/img/gallery-img-06.jpg" alt="">
                     <div class="caption">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus at ducimus
                             exercitationem facere reiciendis sit minima modi vel perferendis, labore nobis asperiores
@@ -231,7 +239,7 @@
     </section>
 
     <!-- start Contact Us -->
-    <section class="Contact ">
+    <section class="Contact " id="Contact">
         <div class="container">
             <div class="titel">
                 <h1>Contact Us</h1>
@@ -242,18 +250,48 @@
                 <input class="main-input" type="text" name="name" placeholder="Your Name" />
                 <input class="main-input" type="email" name="maill" placeholder="Your Email" />
                 <textarea class="main-input" name="message" placeholder="Your Message"></textarea>
-                <input type="submit" value="send Message" />
+                <button class="btn btn-info">
+                    Send Message
+                </button>
             </form>
         </div>
     </section>
 
+<!-- footer -->
+
+<main class="footer" id="Footer">
+    <div class="container">
+        <div class="row">
+            <div class="copyright col-lg-6 " data-wow-duration="3s">
+                © Copyright <strong>#Infinite_Loop</strong> All Rights Reserved <br>
+
+                Call: 012 811 51982 --
+                012 811 51982 -- 012 811 51982
+                <p> Location: 38th EL-kordy st , new fostat Cairo Egypt</p>
+            </div>
+            <div class="email col-lg-5 " data-wow-duration="3s">
+                Email:
+                <p>Markyaccoub@gmail.com</p>
+                Designed by <a href="https://github.com/Mark-Yaacoub">Mark Yacoub</a>
+            </div>
+            <div class="col-lg-1 " data-wow-duration="4s">
+                <button>
+                    <a href="#Home" id="Home">
+                        <i class="fa-solid fa-arrow-up-long"></i>
+                    </a>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</main>
 
 
 
-
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
